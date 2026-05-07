@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.CSS">
+<title>Contact mini-site</title>
+</head>
+<body>
+   <h1>Page de contact </h1> 
+   <nav>
+    <a href="index.html">Accueil </a>
+    <a href="présentation.html">présentation </a>
+    <a href="contact.html">contact </a>
+   </nav>
+   <div class="section">
+   <h2>Formulaire de contact</h2>
+   <p>veuillez remplir ce formulaire pour envoyer un message .</p>
+   </div>
+   <form>
+   <label for="nom" >Nom:</label>
+   <input type="text" id="nom" name="nom" placeholder="Entrez votre nom" required>
+   <br>
+   <br>
+   <label for="prénom">Prénom:</label>
+   <input type="text" id="prénom" name="prénom" placeholder="Entrez votre prénom" required>
+   <br>
+   <br>
+   <label for="email">Adresse email :</label>
+   <input type="email" id="email" name="email" placeholder="exemple@email.com" required>
+   <label for="téléphone">Téléphone </label>
+   <input type="tel" id="Téléphone" name="Téléphone" placeholder="+237 6 XX XX XX XX">
+   <br>
+   <br>
+   <label for="motif">Motif du message </label>
+   <select id="motif" name="motif" required>
+    <br>
+    <br>
+   </select> 
+   <label for="domaine">domaine d'intérêt :</label>
+   <select id="domaine" name="domaine" required></select>
+    <option value=""></option>
+    <option value="information">Demande d'information </option>
+    <option value="stage">Demande de stage </option>
+    <option value="projet">Proposition de projet</option>
+    <option value="autre">Autre demande </option>
+   </select>
+   <br>
+   <br>
+   <p>Statut du visiteur </p>
+   <input type="radio" id="étudiant" name="statut" value="étudiant" required>
+   <label for="étudiant">Étudiant</label>
+   <br>
+   <input type="radio" id="enseignant" name="Statut" value="enseignant">
+   <label for="enseignant">Enseignant</label>
+   <br>
+   <input type="radio" id="professionnel" name="statut" value="professionnel">
+   <label for="professionnel">Professionnel </label>
+   <label for="message">Message :</label>
+   <br>
+   <br>
+   <label for="domaine">domaine d'intérêt :</label>
+   <select id="domaine" name="domaine" required>
+    <option value=""></option>
+    <option value="réseaux">réseaux informatiques </option>
+    <option value="cybersecurité">cybersecurité</option>
+    <option value="développement-web">développement-web</option>
+    <option value="administration-système">administration-système</option>
+   </select>
+   <br>
+   <br>
+   <textarea id="message" name="message" rows="5" cols="40" placeholder="Ecrivez votre message ici" required></textarea>
+   <br>
+   <br>
+   <input type="checkbox" id="confirmation" name="confirmation" required>
+   <label for="confirmation"> je confirme que les informations saisies sont correctes </label>
+   <br>
+   <br>
+   <button type="submit">Envoyer</button>
+</form>
+</body>
+</html>
